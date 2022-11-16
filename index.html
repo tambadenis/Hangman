@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Hangman</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple hangman game">
+    <meta name="keywords" content="Hangman">
+    <meta name="author" content="Tamba Denis Valentin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Hangman</h1>
+      <p>Use the alphabet buttons bellow to guess a word, else click hint to get a clue"</p>
+      <p id="introText">The words consists of mountain peak's names from Romania</p>
+      <p id="mylives"></p>
+      <div id="buttonsHolder"></div>
+      <div id="name"></div>  
+      <p id = "wordGenerator"></p>
+      <p id="clue">Clue -</p>  
+      <div class="container">
+        <button id="hint" onclick="showHint()">Hint</button>
+        <button id="reset" onclick="resetGame()">Try again</button>
+      </div>
+  </div>
+    <script src="index.js"></script>
+  </body>
+</html>
